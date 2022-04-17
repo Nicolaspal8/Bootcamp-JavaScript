@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+
+//Estructura o arbol del dom 
+Document
+    |
+    |
+    |
+Root element: <html></html>
+    |
+    |___
+        |
+    ----------
+    |        |
+    |        |
+    |        |
+  <head>   <body>-------> Todos aquellos elementos que representan un elemento grafico
+    |
+-----
+|
+Todos los scrips, metadatos, elementos css y otros elementos externos que no representan un elemento grafico individualmente
+
+DOM-->Document Object Model
+Contempla 3 tipos de documentos segun W3C
+1.- core DOM --> Modelo estandar para todos los tipos de documentos acogidos
+2.- XML DOM --> Modelo para tipos de documentos XML el cual es usado ampliamente en servicios web
+3.- HTML --> Modelo estandar para documentos de tipo HTML que es utilizado en los sitios web
+
+Metodos Para crear elementos dentro del body
+var parrafo = document.createElement('p');
+parrafo.innerHTML = 'Soy un párrafo';
+document.body.appendChild(parrafo);
+-----------
+Metodo para agregar propiedades a un elemento
+let caja = document.getElementById('box');
+let boton = document.createElement('input');
+boton.setAttribute('type', 'button');
+boton.setAttribute('value', 'Boton nuevo');
+document.body.replaceChild(boton, caja);
+
