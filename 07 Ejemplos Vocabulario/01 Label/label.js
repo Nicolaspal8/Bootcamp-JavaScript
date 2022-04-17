@@ -11,7 +11,7 @@ while(true){
         }
     console.log(`Bucle unidades: ${decenas}${unidades}`)
     }
-    decenas++
+     decenas++
     if(decenas == 2) break; //Hasta aqui imprime hasta 19 por ende necesitamos otro console.log para imprimir el 20 y eso lo simplificaremos con la label
 }
 let decenas2 = 0;
