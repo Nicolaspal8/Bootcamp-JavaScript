@@ -1,0 +1,59 @@
+*{
+    font-family: 'Cabin', sans-serif;
+}
+nav{
+    background-color: #373A3C;
+}
+h2, .ricomida{
+    font-family: 'Lobster', sans-serif ;
+    font-weight: 400;
+}
+h1,h5{
+    font-family: 'Cabin', sans-serif ;
+    font-weight: 700;
+}
+#btn-carousel-1, #btn-carousel-2 {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+}
+@media screen and (min-width: 362px) {
+    .descripcionPizza{
+        text-align: center;
+    }
+}  
+@media screen and (min-width: 768px){
+
+    .imagen-carousel{
+        width: 16vw;
+    }
+}
+@media screen and (min-width: 992px) {
+    h1.h1-principal{
+        padding-right: 5em;
+        
+    }
+    .descripcionPizza{
+        text-align: start;
+    }
+    .imagen-carousel{
+        width: 19vw;
+    }
+}
+@media screen and (min-width: 1200px) {
+    .imagen-carousel{
+        width: 20vw;
+    }
+}
+
+.publicidad{
+    height: 55vh;
+}
+hr{
+    
+}
+footer{
+    background-color: #373A3C;
+    height: 10vh;
+}
+
