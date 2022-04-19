@@ -22,17 +22,17 @@ tú eres el culpable leopardo. \
 Son caracteres especiales abreviados, utilizados para implementar un patron de busqueda 
 1. **.** : El caracter de punto "." es como un comodín ya que busca un caracter cualquiera dentro de un patrón el cual tambien puede ir acompañado de otro patron que se necesite validar \ 
 Ejemplo: \ 
-        const patron = /.perro./gim;
-        const texto = 'el_perro_abandonado';
-        console.log(texto.match(patron)); //["_perro_"]
+        `const patron = /.perro./gim;`
+        `const texto = 'el_perro_abandonado';`
+        `console.log(texto.match(patron)); //["_perro_"]`
 2. **\w** : Nos permite encontrar coincidencias con caracteres númericos y letras por ejemplo \
-        const patron = /\w/gim;
-        const texto = 'juan carlos :-)';
-        console.log(texto.match(patron)); //(10) ["j","u","a,"n","....o","s"];
+        `const patron = /\w/gim;`
+        `const texto = 'juan carlos :-)';`
+        `console.log(texto.match(patron)); //(10) ["j","u","a,"n","....o","s"];`
 Y aplicada de manera inversa con \W en mayusculas obtendremos todos los que no estan en el output anterior // (5) [" ", " ", ":", "-", ")"]
 3. **\d** : Nos permite encontrar las coincidencias solo con caracteres numericos por ejemplo: \
-        const patron = /\d/gim;
-        const texto = 'mañana cumplo 20 años';
-        console.log(texto.match(patron)); // (2) ["2", "0"]
+        `const patron = /\d/gim;`
+        `const texto = 'mañana cumplo 20 años';`
+        `console.log(texto.match(patron)); // (2) ["2", "0"]`
         
 
