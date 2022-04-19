@@ -1,0 +1,26 @@
+*{
+    color: white;
+    font-family: 'Raleway', sans-serif;
+    scroll-behavior: auto !important;
+}
+.carousel-item img{
+    height: 100vh;
+}
+#secciones{
+    background-color: black;
+}
+section{
+    margin-bottom: 5rem;
+    --bs-columns: 3;
+}
+.card{
+    margin: auto;
+}
+#presentacion i, hr{
+    display: block;
+    text-align: center;
+    background-color: #0dcaf0;
+}
+#type_form{
+    height: 30vh;
+}

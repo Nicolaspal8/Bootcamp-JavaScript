@@ -1,0 +1,19 @@
+*{
+    font-family: 'Roboto', sans-serif;
+}
+/* Argegue el color success de bootstrap pero no era el mismo al de la maqueta y se veia mas feo asi que puse el de la maqueta */
+.nav-color, .formulario{
+    background-color: #28A745;
+}
+.icons-section{
+    background-color: #17A2B8;
+}
+h1{
+    font-weight: 500;
+  }
+h5{
+    color: #28A745;
+}
+p{
+    color: gray;
+}
