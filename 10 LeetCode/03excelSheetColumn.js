@@ -24,4 +24,3 @@
 
 // Input: columnNumber = 701
 // Output: "ZY"
-
