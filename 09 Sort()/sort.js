@@ -1,3 +1,4 @@
+//SORT:Nos ordena el array alfabeticamente 
 //Esta primera funcion se la pasamos como parametros al metodo sort para obtener los numeros ordenados de menor a mayor, si no pasamos nada ordenara por defecto y el output sera algo asi 1 ,20000, 3, 40000, 5  No considera el tamaño solo los numeros iniciales 
 function compareNumbers(a, b) {
     return a - b;
