@@ -2,6 +2,7 @@
 function compareNumbers(a, b) {
     return a - b;
   }
+//El siguiente ejercicio devuelve la media entre 2 arrays es decir recibe 2 arrays los concatena y determina la media 
   var findMedianSortedArrays = function(nums1, nums2) {
       let arr1 = nums1.concat(nums2);
       let arr = arr1.sort(compareNumbers);
@@ -11,5 +12,4 @@ function compareNumbers(a, b) {
       }else{
           return arr[(length+1)/2 - 1];
       }
-      
   };
