@@ -1,0 +1,1 @@
+/* El metodo test ejecuta una busqueda entre una expresion regular y una cadena especifica en la cual donde se hará la busqueda devolviendo true o false */
