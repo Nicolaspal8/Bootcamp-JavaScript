@@ -127,8 +127,8 @@ var level = pokemones.filter(function(experiencia){
 return experiencia.level > 30;
 });
 console.log(level);
-/*6. Escriba el código para obtener este arreglo final usando el método concat var */
-resultado = ["perro","gato","ratón","iguana"];
+/*6. Escriba el código para obtener este arreglo final usando el método concat */
+var resultado = ["perro","gato","ratón","iguana"];
 var animalesA = ["perro","gato"];
 var animalesB = ["ratón","iguana"];
 var animales = animalesA.concat(animalesB);
