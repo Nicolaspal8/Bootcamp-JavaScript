@@ -37,8 +37,10 @@ de la característica en su respectiva versión y como funciona en diferentes ve
 + **Constructor**: Cada clase debe tener un constructor aunque sea vacío como buena practica, el constructor nos permitira construir dicho objeto con cierta propiedades que querramos que posea a través de parametros, es decir el color que queramos de nuestro auto, la cantidad de puertas , kilometraje etc
 15. - **hasOwnProperty** : Es un metodo de cada objeto que nos dira si tiene una valor como propiedad propia o como propiedad prototype un ejemplo seria creando un objeto perro de la clase animal y en el property agregarle la klave edad y el valor de 5 asi:\
 `Animal.property.edad = 5;` luego iterarlo con un for in y utilizar el metodo dentro de la iteracion de la siguiente forma\
-<code>for (key in pepe) {
+~~~
+ for (key in pepe) {
     if (pepe.hasOwnProperty(key)) {
-    console.log(key, pepe[key]);
+        console.log(key, pepe[key]);
     }
-};</code>
+ };
+~~~
