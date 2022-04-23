@@ -7,7 +7,7 @@
 // const flecha = nombre => console.log(`Hola ${nombre}`);
 // 04. Return implicito solo cuando es una operacion en una linea como la anterior si tenemos mas lineas ya no funciona el return implicito
 
-// Una particularidad de las arrows function es que al utilizar el elemento this no hace referencia al objeto primario donde esta almacenado si no que hace referencia al objeto global donde esta que es el objeto windows por lo cual en objetos literales como este de acontinuación que poseen funciones 
+// Una particularidad de las arrows function es que al utilizar el elemento this no hace referencia al objeto primario donde esta almacenado si no que hace referencia al objeto global donde esta que es el objeto windows por lo cual en objetos literales como este de a continuación que poseen funciones 
 const perro = {
     nombre: 'pepito',
     ladrar(){console.log('Ladrando')} 
@@ -31,7 +31,7 @@ const perro3 = {
 const pow = (a, b = 2) => Math.pow(a, b);
 const foo = pow(2); // 4
 const bar = pow(3, 3); // 27
-//2.- Agregar un parametro requerido a travez de una segunda funcion siendo llamada de la arrow function como parametro por defecto si es que no se especifica ningun parametro
+//2.- Agregar un parametro requerido a través de una segunda funcion siendo llamada de la arrow function como parametro por defecto si es que no se especifica ningun parametro
 
 
 // Check required parameters in Javascript
@@ -40,7 +40,7 @@ const bar = pow(3, 3); // 27
 const checkRequired = paramName => {
     throw new Error(`${paramName} is required`);
   };
-//Es pasada la funcion en los parametros por defecto de la funcino doSomething
+//Es pasada la funcion en los parametros por defecto de la funcion doSomething
 const doSomething = (requiredParam = checkRequired('requiredParam')) => {
      console.log(` Do something with ${requiredParam}`);
    };
