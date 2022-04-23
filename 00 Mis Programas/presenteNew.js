@@ -9,9 +9,10 @@ const present = function setPresente(){
     input.textContent = "Presente";
     btn.click(); 
 }    
-setTimeout(present, future.getTime() - now.getTime());
-setTimeout(present, 3600000);
-setTimeout(function(){inputColgar.click();}, 5040000);
+let tiempo = future.getTime() - now.getTime();
+setTimeout(present, tiempo);
+setTimeout(present, tiempo + 3600000);
+setTimeout(function(){inputColgar.click();}, tiempo + 5040000);
 
 
 

@@ -28,6 +28,12 @@ de la característica en su respectiva versión y como funciona en diferentes ve
 ~~~
 let arr = [1,2,3,4];
 ['uno','dos','tres','cuatro'] = arr; 
+//Otro ejemplo 
+const foo = ['one', 'two', 'three'];
+const [red, yellow, green] = foo;
+console.log(red); // "one"
+console.log(yellow); // "two"
+console.log(green); // "three"
 ~~~
 12. - **Contexto** Contexto de la funcion = Quiere decir lo que sucede dentro de la funcion y si decimos que la funcion guarda el contexto es decir que al volver a ser ejecutada recordara donde y que estaba haciendo y que tiene que hacer ahora 
 13. - **Algebra de Conjuntos** : Matematicamente un conjunto es una coleccion de objetos que pertenecen a la misma naturaleza por ejemplo un conjunto de numeros pares y otro conjunto de numeros impares, conociendo esto, hay operaciones que se pueden aplicar a los conjuntos de datos en un lenguaje de programación\
