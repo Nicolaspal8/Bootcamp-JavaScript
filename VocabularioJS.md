@@ -54,4 +54,44 @@ console.log(green); // "three"
     }
  };
 ~~~
-16. - ** **:
+16. - **Ambito Léxico** = Determina el cuando y donde de nuestro codigo, es decir donde y cuando declaramos una variable, funcion, matriz, nuestro codigo en si\
+Por ejemplo:
+~~~
+function hacerAlgo(){
+    var color = 'Rojo';
+    return `El color es ${color}`
+}
+~~~
+La variable color esta siendo declarado dentro del ambito lexico de la funcion, o mas bien dicho lexicamente declarada dentro de la funcion hacerAlgo
+17. - **Contexto de Ejecución** = Es el codigo que estamos ejecutando en un dicho momento y a su vez a los elementos del cual depende dicho codigo dentro de un ambito léxico\
+Fases antes de la ejecucion de un codigo
++ **Tokenización** : la cadena de codigo fuente se divide en varios fragmentos llamados Tokens por ejemplo el codigo var color = 'rojo' se divide en var,color,=,',rojo,'
++ **Parsing** : Analiza la matris de toquens generara anteriormente  la cual se convierte en un arbol llamado AST(Arbol de sintaxis abstracta) de elementos anidados comprendidos por la gramatica del idioma donde estemos trabajando
++ **Generación de codigo Ejeutable** : Ahora el arbol creado en la fase anterior se convierte en codigo de bytes ejecutable el cual luego es optimizado aun mas por un compilador JIT(Just-in-Time).
+    ## 2 tipos de contexto de ejecución
++ **Global Execution Context (GEC)** : Cada vez que ejecutamos un codigo de javascript es creado este contexto tambien conocido como contexto de ejecucion base y posee 2 fases al igual que el contexto de ejecucion de funcion 
+    - **Fase de creacion** : Son creadas 2 cosas unicas, y se asignan espacio en memoria para variables y funciones y asignacion de valores undefined para variables es decir son solo declaradas ya que aqui es donde sucede el Hositing o elevacion
+        - **Objeto Global windows(Para JS del lado del cliente)**
+        - **Una variable Global llamada this** 
+    - **Fase de ejecición** : Aquí comienza la ejecucion del codigo, se asigna el valor de las variables globales. Hay que tener en cuenta que aqui no se invoca ninguna funcion como en el contexto de ejecucion de funciones
++ **Function Execution Context (FEC)** : Este contexo es creado al invocar a una funcion\
+Ejemplo:
+~~~
+var perfil = 'Nicolaspal8';
+
+function mostrarPerfil() {
+  console.log(this.perfil); 
+}
+
+// Llamemos a la función
+mostrarPerfil();
+~~~
+El Contexto de ejecución de la función pasa por las mismas fases mencionadas anteriormente
+    - **Fase de ejecucion** : Tiene acceso al valor llamado arguments que son los argumentos o parametros que recibe nuestra funcion, y dependiendo de donde se cree y como nuestra funcion varia el valor de la variable global this ya que una funcion puede ser declarada o expresada que no es mas que:
+    ~~~
+    function declarada(){hacer algo};
+    const funcionExpresada = function(){hacer algo};
+    ~~~
+    Tambien depende el tipo de funcion que utilizamos si es una funcion normal o una funcion flecha pero eso esta explicado con detalle en la seccion numero 3 en funciones arrow\
+    - **Importante Tener en cuenta** : Cuando una función invoca a otra función se crea un nuevo contexto de ejecucion de funcion para la nueva llamada de funcion. y cada contexto de ejecucion de la funcion determina el alcanze que tienen las variables utilizadas dentro de dichas funciones 
+18. **Hoisting en JS** : 
