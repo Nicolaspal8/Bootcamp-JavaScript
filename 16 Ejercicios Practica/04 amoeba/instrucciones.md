@@ -1,0 +1,1 @@
+![Instrucciones de ejercicio](/img/03%20amoeba.png)
