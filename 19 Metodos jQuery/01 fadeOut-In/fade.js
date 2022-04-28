@@ -17,3 +17,14 @@ setInterval > (fadeOut + fadeIn) ? mayor = setInterval : mayor = fadeOut + fadeI
 
 let veces = Math.ceil(setInterval /  mayor);
 console.log(veces)
+
+// let gf = {nombre: 'pepe', func:
+// function prueba(a,parametros){
+//     return a;
+// }}
+// let a = gf.func("hola",function (p){console.log(p)});
+
+// //Guardando una funcino en un arreglo y luego aplicando destructuring para hacer unso de ella de una manera mas comoda
+// let ar = [1,2,3,function pera(){console.log("holaaaa")}];
+// let [uno,dos,tres,funcino] = ar;
+// funcino();
