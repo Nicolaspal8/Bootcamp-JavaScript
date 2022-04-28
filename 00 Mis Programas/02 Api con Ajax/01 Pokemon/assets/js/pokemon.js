@@ -41,15 +41,3 @@ $(document).ready(function(){
         })
     })
 })   
-function fade(){
-    $('button').fadeOut(1000,function(){
-        $(this).fadeIn(1000)
-    })
-}
-let n = 0;
-let id = setInterval(fade,1000)
-console.log(id)
-while(n++<10){
-}
-id.clearInterval();
-
