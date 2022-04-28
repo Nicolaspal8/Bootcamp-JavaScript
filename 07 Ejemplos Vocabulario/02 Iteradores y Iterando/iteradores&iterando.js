@@ -33,7 +33,7 @@ function iterador(array) {
      return {
             next: function() {
                 if (count < array. length)
-                    return { value: array[count], done: false }
+                    return { value: array[count++], done: false }
                 else
                     return { value: undefined, done: true }
                }
@@ -47,7 +47,7 @@ console. log(refIterador.next());
 
 
 
-// Iterable es un objeto que contiene un metodo a [Symbol.iterator](): iteratorObject
+// Iterable es un objeto que contiene un metodo a [Symbol.iterator](): iteratorObject dentro de sus propiedades
 let iterable = {
     [Symbol.iterator](){return iteratorObject}
 }
@@ -83,7 +83,7 @@ class RandomArray extends Array {
     }
 }    
 
-//4.- Ejemeplo de creacion de un objeto iterable 
+//4.- Ejemeplo de creacion de un objeto iterable con una funcion generadora la cual devuelve un generador que es lo que devuelve el yield
 var myIterable = {};
 myIterable[Symbol.iterator] = function* () {
     yield 1;
