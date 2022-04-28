@@ -10,3 +10,4 @@ Diversos ejercicios desde paginas web creadas con bootstrap y jQuery hasta algor
 + **Node.js**
 + **Consumo de APIs**
 + **Ajax**
++ **Manejo y creación de plugins**

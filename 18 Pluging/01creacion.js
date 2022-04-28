@@ -35,3 +35,47 @@ elementos de la página.
 los usuarios podrán usar alias personalizados para ese plugin a través del método
 noConfict(), descartando los problemas que puedan haber, si dos plugin tienen el
 mismo nombre. */
+
+//Creacion de un Plugin
+jQuery.fn.parpadea = function() {
+    this.each(function(){
+    elem = $(this);
+    elem.fadeOut(250, function(){
+    $(this).fadeIn(250);
+    });
+    });
+    return this;
+    };
+
+/* Ya tenemos nuestro primer plugin. Como puedes observar en el ejemplo, para generar una
+función del plugin debemos invocar la función jQuery.fn.[nombre_de_la_función] de esta
+forma jQuery entenderá que es una función diseñada por tí y propia. En particular esta
+función genera una especie de parpadeo suave en un elemento.
+Bueno, ahora la queremos usar, entonces es sencillo: */
+$(document).ready(function(){
+    //parpadean los elementos de class CSS "parpadear"
+    $(".parpadear").parpadea();
+    //añado evento click para un botón. Al pulsar parpadearán los elementos de clase parpadear
+    $("#botonparpadear").click(function(){
+        $(".parpadear").parpadea();
+    })
+})
+//Creacion de un plugin para agregar datos de una api a un objeto en el html
+jQuery.fn.datosFinancieros = function() {
+    var element = this;
+    $.ajax({
+        type:"GET",
+        url:"https://mindicador.cl/api",
+        dataType:"json",
+        success: function(data) {
+        element.append(
+        `<span>${data.uf.valor}</span>`
+        )
+        }
+    });
+    return this;
+    };
+//Hacemos uso del plugin creado simplemente es una funcion agregada al objeto de jQuery nada mas que eso el cual luego lo podemos ocupar de forma global en nuestro codigo
+$(document).ready(function(){
+    $('#miCaja').datosFinancieros();
+});
