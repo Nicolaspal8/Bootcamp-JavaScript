@@ -109,3 +109,4 @@ El Contexto de ejecución de la función pasa por las mismas fases mencionadas a
 Tambien depende el tipo de funcion que utilizamos si es una funcion normal o una funcion flecha pero eso esta explicado con detalle en la seccion numero 3 en funciones arrow\
 - **Importante Tener en cuenta** : Cuando una función invoca a otra función se crea un nuevo contexto de ejecucion de funcion para la nueva llamada de funcion. y cada contexto de ejecucion de la funcion determina el alcanze que tienen las variables utilizadas dentro de dichas funciones 
 18. **Hoisting en JS** : 
+19. **Programación Basada en Prototipos** : Es un estilo de Programación Orientada a Objetos, que permite la creación de un objeto sin definir explícitamente su clase, derivando sus atributos al agregar propiedades y métodos a una instancia de otra clase o agregarlos a un objeto vacío.

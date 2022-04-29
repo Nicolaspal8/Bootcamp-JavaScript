@@ -21,7 +21,7 @@ $(document).ready(function(){
             `);
             let estadisticas = []
             data.stats.forEach(e => {
-                estadisticas.push({label:e.stat.name, y: e.base_stat})
+                estadisticas.push({ y: e.base_stat,label:e.stat.name})
             })
             var options = {
                 title: {

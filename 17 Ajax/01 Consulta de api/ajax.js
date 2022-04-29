@@ -11,7 +11,7 @@ $.ajax({
     /* Nota
     Una aclaración sobre el parámetro dataType: Si el servidor devuelve información que es diferente al formato especificado, el código fallará, y la  razón de porque lo hace no siempre quedará clara debido a que la respuesta HTTP no mostrará ningún tipo de error. Cuando esté trabajando con peticiones Ajax, debe estar seguro que el servidor esta enviando el tipo de información que esta solicitando y verifique que la cabecera    Content-type es exacta al tipo de dato. Por ejemplo, para información en formato JSON, la cabecera Content-type debería ser application/json. */
     dateType: 'Tipo de dato recibido puede ser xml, json, script o html',
-    succes: function(data){
+    success: function(data){
         //Si todo sale bien aqui estara lo que haremos con los datos
     },
     // código a ejecutar si la petición falla;
