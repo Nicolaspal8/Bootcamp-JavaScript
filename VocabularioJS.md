@@ -53,7 +53,7 @@ console.log(green); // "three"
 + **Unión** : La unión de dos conjuntos A y B forman El conjunto A U B que contiene los elementos de ambos conjuntos en uno solo
 + **Intersección** : La intersección de A y B es el Conjunto A ∩ B que contiene los elementos en comun de ambos conjuntos
 + **Diferencia** : La diferencia entre A y B es el conjunto A \ B que contiene todos los elementos de A que no se encuentran en B 
-14. **Objetos en JavaScript**: Los objetos son el resultado de instanciar una clase, un objeto puede ser cualquier cosa que pueda poseer metodos y atributos los cuales los definire a continuación:
+14. **Objetos en JavaScript**: [Ubicación de carpeta ejemplo de funcionamiento (Carpeta 13)](13%20Objetos/objeto.js)Los objetos son el resultado de instanciar una clase, un objeto puede ser cualquier cosa que pueda poseer metodos y atributos los cuales los definire a continuación:
 + **Clase**: Una clase sera como el plano de nuestro objeto es decir que va a poseer dicho objeto que caracteristicas y que funciones podra realizar a la hora de ser instanciado
 + **Instanciar**: Se refiere al proceso por el cual se crea un objeto a partir de una clase es decir el proceso de fabricación del objeto
 + **Metodos y Atributos** : Cada objeto los poseera y seran nuestras caracteristicas como el color de un auto la cantidad de ruedas o puertas, y a su vez poseera metodos que seran todo aquello que puede hacer nuestro objeto en este caso el auto, prender las luces, andar, etc
@@ -110,3 +110,87 @@ Tambien depende el tipo de funcion que utilizamos si es una funcion normal o una
 - **Importante Tener en cuenta** : Cuando una función invoca a otra función se crea un nuevo contexto de ejecucion de funcion para la nueva llamada de funcion. y cada contexto de ejecucion de la funcion determina el alcanze que tienen las variables utilizadas dentro de dichas funciones 
 18. **Hoisting en JS** : 
 19. **Programación Basada en Prototipos** : Es un estilo de Programación Orientada a Objetos, que permite la creación de un objeto sin definir explícitamente su clase, derivando sus atributos al agregar propiedades y métodos a una instancia de otra clase o agregarlos a un objeto vacío.
+20. **Abstracción** : Proceso por el cual se descompone un objeto en partes más simples, para hacer más fácil la comprensión del mismo.
+21. **Azúcar Sintáctico** (Syntactic Sugar): Es un término acuñado por Peter J Landin en 1964 para referirse a los añadidos a la sintaxis de un lenguaje de programación diseñados para hacer algunas construcciones más fáciles de leer o expresar. Como el caso de la palabra reservada Class.
+22. **Encapsulación** : Mecanismo de la Programación Orientada a Objetos por el cual seoculta información propia de un objeto al entorno exterior a él, con el fin de mantener su integridad.
+23. **Mutabilidad** :  Capacidad de un valor u objeto para cambiar su valor o estado.
+24. **Node** : Es un entorno JavaScript que permite ejecutar código en el servidor de manera asíncrona.
+25. **NPM** :  Node Package Manager, es un gestor de paquetes de JavaScript que facilita el trabajo con cualquier librería disponible.
+26. **POO** :  Programación Orientada a Objetos. Es un paradigma de programación, es decir, una manera que permite diseñar un programa y pensar en los datos en términos de objetos del mundo real, con propiedades y comportamientos.
+27. **Programación Basada en Prototipos** :  Es un estilo de Programación Orientada a
+Objetos, que permite la creación de un objeto sin definir explícitamente su clase,
+derivando sus atributos al agregar propiedades y métodos a una instancia de otra
+clase o agregarlos a un objeto vacío.
+28. **Pureza** :  Propiedad de una función. Se considera que una función es pura cuando noproduce efectos secundarios y cuando produce los mismos resultados cada vez quese le pasan los mismos argumentos.
+29. **Patron de Diseño** :
+30. **Transpilación** :
+31. **Interprete** :
+32. ** ** :
+33. ** ** :
+34. ** ** :
+35. ** ** :
+36. ** ** :
+37. ** ** :
+38. ** ** :
+39. ** ** :
+40. ** ** :
+41. ** ** :
+42. ** ** :
+43. ** ** :
+44. ** ** :
+45. ** ** :
+46. ** ** :
+47. ** ** :
+48. ** ** :
+49. ** ** :
+50. ** ** :
+51. ** ** :
+52. ** ** :
+53. ** ** :
+54. ** ** :
+55. ** ** :
+56. ** ** :
+57. ** ** :
+58. ** ** :
+59. ** ** :
+60. ** ** :
+61. ** ** :
+62. ** ** :
+63. ** ** :
+64. ** ** :
+65. ** ** :
+66. ** ** :
+67. ** ** :
+68. ** ** :
+69. ** ** :
+70. ** ** :
+71. ** ** :
+72. ** ** :
+73. ** ** :
+74. ** ** :
+75. ** ** :
+76. ** ** :
+77. ** ** :
+78. ** ** :
+79. ** ** :
+80. ** ** :
+81. ** ** :
+82. ** ** :
+83. ** ** :
+84. ** ** :
+85. ** ** :
+86. ** ** :
+87. ** ** :
+88. ** ** :
+89. ** ** :
+90. ** ** :
+91. ** ** :
+92. ** ** :
+93. ** ** :
+94. ** ** :
+95. ** ** :
+96. ** ** :
+97. ** ** :
+98. ** ** :
+99. ** ** :
+100. ** ** :
