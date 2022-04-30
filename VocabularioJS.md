@@ -125,8 +125,11 @@ clase o agregarlos a un objeto vacío.
 29. **Patron de Diseño** :
 30. **Transpilación** :
 31. **Interprete** :
-32. ** ** :
-33. ** ** :
+32. **Prototipo** : Su definicion como palabra quiere decir que representa a el ejemplar original o al primer molde en el que se fabrico alguna cosa u objeto, tambien significa que es el modelo mas representativo de algo degun la RAE
+33. **Prototype** : [Aqui un buen video el cual ayudará mejor a la comprension del  Prototype](https://www.youtube.com/watch?v=6gmYapa-KBY&ab_channel=JuanJoseOrtiz)El prototype en si de un objeto es heredado por defecto del Object Prototype, el cual es agregado al momento de crear dicho objeto por el motor de javascript, en si cada objeto tendra dentro de sus propiedades el objeto o protype que es lo mismo ya que es un objeto y una propiedad del objeto, tendra el constructor del objeto creado y la propiedad \__proto__ que es otro objeto que contiene a su vez un objeto mas\
+Puntos importantes a tener en cuenta:
++ Al crear un objeto y agregar ciertas propiedades las cuales pueden contener diferentes tipos de datos hasta una funcion se le sera agregada a todas las instancias creadas de dicho objeto por defecto, es decir que cada nuevo objeto que creemos a partir de una funcion constructora o de una clase esta extendera las caracteristicas presentes en el prototype a todas los objetos creados a partir de ella, y si en el trascurso de nuestro codigo modificamos o agregamos mas propiedades a el prototype de un objeto creado a partir de la clase base entonces automaticamente seran agregadas a todos los otros objetos que vengan de dicha clase o constructor
++ El motor de JavaScript cuando queremos invocar o hacer referencia a una propiedad de un objeto este busca en las propiedades que aregamos nosotros a través del constructor y por defecto tambien busca en el prototype de dicho objeto es decir que si en el prototype agregamos una funcion no sera necesario acceder a ella de la forma convencional a través del nombre de las diferentes propiedades externas hasta llegar a el objeto que contiene o la propiedad(cada vez que hablamos de objeto o propiedad es lo mismo porque una propiedad a su vez es un objeto que contiene mas objetos o propiedades)si no que solo necesitaremos escribir el nombre de dicha funcion o propiedad nueva agregada antecedido del nombre de nuestro objeto ya que por defecto el motor de JavaScript hará un escaneo en dichas propiedades a parte de las que ya le agregamos nosotros como primera capa 
 34. ** ** :
 35. ** ** :
 36. ** ** :
