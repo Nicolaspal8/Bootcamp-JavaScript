@@ -133,9 +133,36 @@ Puntos importantes a tener en cuenta:
 34. **Encapsulación** : Es el proceso de proteger las propiedades de los estados internos es decir de los objetos para solo poder accedidas y modificadas a través de los getters y setter y no directamente es decir es un tipo de aislacion
 35. **Object.defineProperty** : [El ejemplo esta en carpeta 13 archivo new](13%20Objetos/02new.js)(this,'nombreVariable',{get o set
 Al trabajar con este metodo para definir propiedades, trabajamod con los parametros pasados dentro de la funcion defineProperty y le asignamos una propiedad con el nombre de la variable y luego un objeto con sus respectivos set y get y a la hora de llamar al get o set no hará falta especificar si es por ejemplo objeto.nombrePropiedad.set o .get si no que solo js identificara a cual nos referimos ya que uno recibe parametros y el otro no recibe parametros entonces si le enviamos paramatros asimilara que se llama al set y si no recibe ningún parametro hará referencia al getter
-36. ** ** :
-37. ** ** :
-38. ** ** :
+36. **UML** : Unifed Modeling Language o lenguaje unificado de modelado, es un lenguaje el cual se usa para modelar varios procesos en informatica que permite la interaccion de clientes y programadores teniendo una vista del funcionamiento mas clara del codigo y cual sera su estructura a seguir
+    + Diagramas de Comportamiento : Muestra como se comporta el sistema de forma dinamica, es decir los cambios que experimenta en su ejecucion y la interaccion con otros sistemas del cual hay 7 subtipos
+        - Diagrama de Actividad
+        - Diagrama de Casos de uso de una maquina de estados y de interaccion que esta se subdivide en :
+            + Diagrama de secuencia global de interaccion
+            + de comunicacion
+            + de tiempos
+        - Diagrama de Estructura : Muestra la estructura estatica de un sistema y sus partes en sus diferentes niveles de abstraccion del cual surgen 6 subtipos
+            + Diagrama de clases
+            + De componentes
+            + De objetos
+            + De estructura compuesta
+            + De despliegue de paquetes
+El mas utilizado en la POO es el diagrama de Clases que representa clases dentro del sistema, atributos y operaciones asi como la relacion entre las diferentes clases
+37. **Cardinalidad** : Nos dice la cantidad de objetos que pueden estar asociados a otros objetos es decir que especificamos en un proyecto que una empresa que seria un objeto no puede tener mas de 50 trabajadores es decir objetos de la clase trabajador o persona
++ Existen diversas formas con las que podemos asociar múltiples objetos, dos formas
+sencillas de lograrlo son con arrays y hashes (objetos literales)
+38. **Tipos de datos** : Principalmente se dividen entre los primitivos y los tipos de objeto <br>
+Ejemplo:
+~~~
+console.log(typeof true);
+console.log(typeof 2);
+console.log(typeof '');
+console.log(typeof function () {});
+console.log(typeof {});
+console.log(typeof Symbol());
+console.log(typeof undefined);
+~~~
+![Tipos de datos en js](img/04Tipos%20de%20datos.png)
+
 39. ** ** :
 40. ** ** :
 41. ** ** :
