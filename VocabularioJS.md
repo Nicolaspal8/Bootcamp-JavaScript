@@ -132,7 +132,7 @@ Puntos importantes a tener en cuenta:
 + El motor de JavaScript cuando queremos invocar o hacer referencia a una propiedad de un objeto este busca en las propiedades que aregamos nosotros a través del constructor y por defecto tambien busca en el prototype de dicho objeto es decir que si en el prototype agregamos una funcion no sera necesario acceder a ella de la forma convencional a través del nombre de las diferentes propiedades externas hasta llegar a el objeto que contiene o la propiedad(cada vez que hablamos de objeto o propiedad es lo mismo porque una propiedad a su vez es un objeto que contiene mas objetos o propiedades)si no que solo necesitaremos escribir el nombre de dicha funcion o propiedad nueva agregada antecedido del nombre de nuestro objeto ya que por defecto el motor de JavaScript hará un escaneo en dichas propiedades a parte de las que ya le agregamos nosotros como primera capa 
 34. **Encapsulación** : Es el proceso de proteger las propiedades de los estados internos es decir de los objetos para solo poder accedidas y modificadas a través de los getters y setter y no directamente es decir es un tipo de aislacion
 35. **Object.defineProperty** : [El ejemplo esta en carpeta 13 archivo new](13%20Objetos/02new.js)(this,'nombreVariable',{get o set
-Al trabajar con este metodo para definir propiedades, trabajamod con los parametros pasados dentro de la funcion defineProperty y le asignamos una propiedad con el nombre de la variable y luego un objeto con sus respectivos set y get y a la hora de llamar al get o set no hará falta especificar si es por ejemplo objeto.nombrePropiedad.set o .get si no que solo js identificara a cual nos referimos ya que uno recibe parametros y el otro no recibe parametros entonces si le enviamos paramatros asimilara que se llama al set y si no recibe ningún parametro hará referencia al getter
+Al trabajar con este metodo para definir propiedades, trabajamos con los parametros pasados dentro de la funcion defineProperty y le asignamos una propiedad con el nombre de la variable y luego un objeto con sus respectivos set y get y a la hora de llamar al get o set no hará falta especificar si es por ejemplo objeto.nombrePropiedad.set o .get si no que solo js identificara a cual nos referimos ya que uno recibe parametros y el otro no recibe parametros entonces si le enviamos paramatros asimilara que se llama al set y si no recibe ningún parametro hará referencia al getter
 36. **UML** : Unifed Modeling Language o lenguaje unificado de modelado, es un lenguaje el cual se usa para modelar varios procesos en informatica que permite la interaccion de clientes y programadores teniendo una vista del funcionamiento mas clara del codigo y cual sera su estructura a seguir
     + Diagramas de Comportamiento : Muestra como se comporta el sistema de forma dinamica, es decir los cambios que experimenta en su ejecucion y la interaccion con otros sistemas del cual hay 7 subtipos
         - Diagrama de Actividad
@@ -163,7 +163,11 @@ console.log(typeof undefined);
 ~~~
 ![Tipos de datos en js](img/04Tipos%20de%20datos.png)
 
-39. ** ** :
+39. **Diagrama de clases** : 
++ Parte Superior: Inidica el nombre de la clase
++ Division Central: se refiere a los atributos de las clases indicando el nombre y el tipo de dato deparado por dos puntos ":"
++ Pie de Tabla: Describe los metodos a emplear y el tipo de dato que retorna
+![Imagen de daigrama de clases](img/05%20diagrama%20de%20clases.png)
 40. ** ** :
 41. ** ** :
 42. ** ** :
