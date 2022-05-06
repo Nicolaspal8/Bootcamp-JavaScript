@@ -28,14 +28,14 @@ nuestro computador mediante la líneas de comando de la terminal, siendo estas:
 npm i -D @babel/preset-env @babel/cli @babel/core @babel/polyfill
 npm i core-js
 ~~~
+
 La primera línea instala el comando Babel, la API principal y el preset de transpilación que
 usarás. Hoy en día, env es el preset principal de babel y contiene instrucciones para
 transpilar todas las funcionalidades presentes en el lenguaje. Mientras que
 @babel/polyfill y core-js, instala una colección de polyfills para ser incorporados al
-código publicado a los navegadores. Un polyfill es un código escrito en ES5 que rellena
-partes de la API que han sido modificadas como parte de ES6, pero que aún no han sido
+código publicado a los navegadores. 
+Un polyfill es un código escrito en ES5 que rellena partes de la API que han sido modificadas como parte de ES6, pero que aún no han sido
 implementadas por todos los navegadores.
-
 Paso 4: Una vez se haya instalado todo, con tu editor de texto de preferencia vuelve a
 revisar tu package.json, por lo que el código en ese archivo en específico se vería así:
 ~~~

@@ -67,7 +67,8 @@ console.log(green); // "three"
     }
  };
 ~~~
-16. - **Ambito Léxico** = Determina el cuando y donde de nuestro codigo, es decir donde y cuando declaramos una variable, funcion, matriz, nuestro codigo en si\
+16. - **Ambito Léxico** = Determina el cuando y donde de nuestro codigo, es decir donde y cuando declaramos una variable, funcion, matriz, nuestro codigo en si, tambien se define como un objeto el cual almacena las variables a através de pares de llaves y valor de la misma forma que un diccionario y pertenece al contexto de ejecucion.\
+El lugar donde se guardan las variables o datos es llamado registro de entorno o enviroment record y cada entorno lexico tiene un puntero al entorno lexico exterior donde fue creado
 Por ejemplo:
 ~~~
 function hacerAlgo(){
@@ -178,9 +179,37 @@ de definir funciones constructoras y sus prototipos.\
 Cuando se habla de azúcar sintáctico, nos referimos a que si bien ES6 implementa clases y 
 otros aspectos del paradigma orientado a objetos, es sólo a nivel de sintaxis, ya que como 
 sabemos JavaScript está orientado a prototipos.
-44. ** ** :
-45. ** ** :
-46. ** ** :
+44. **IFE** : Las expresiones de función ejecutadas inmediatamente (Immediately-invoked
+function expressions o IIFE) son funciones que se ejecutan tan pronto como se
+definen.
+45. **Closures** : Es una funcion autoejecutable la cual devuelve varias variables o funciones las cuales puedes luego trabajar con ellas, engloba toda la funcion en parentesis y al final la hace autoejecutable a través de los parentesis "()", tambien se define como una variable que almacena una funcion la cual posee funciones anidadas y variables a niveles de scope superior las cuales se anclan a las funciones anidadas y asi podemos acceder a ellas, modificarlas o leerlas a través de las funciones anidadas que posee dicha funcion.\
+Aparte de ser definida como una funcion puede ser definida como una variable que almacena una funcion, al estudiar las closures hay que tener en cuenta los conceptos que forman parte de esta como:
++ Cada vez que creamos una funcion o hacemos referencia a una desde una variable distinta, se es creado un nuevo contexto de ejecucion con un nuevo entorno lexico
++ entorno lexico el cual esta definido mas abajo
++ Contexto de ejecucion
++ Caracteristicas de las closures
+    + Nos permite crear variables a las cuales solo puedo acceder a través de los metodos y no directamente a ella
+    + Sirve como una fabrica de funciones ya que puedo utilizar una funcion y objetener diferentes resultados en base a los parametros que les pasamos 
+    + las funciones anidadas pueden interactuar con los argumentos de la funcion y tambien si le agregamos un valor por defecto a los arguments
+~~~
+const miContador=(function(){
+  let contador=0;
+  function incrementar (){
+    return _contador++;
+  }
+  function decrementar (){
+    return contador--;
+  function valor(){
+    return _contador;
+  }
+  return{
+    incrementar,
+    decrementar,
+    valor
+    }
+})();    
+~~~
+46. **Polimorfismo** :
 47. ** ** :
 48. ** ** :
 49. ** ** :
