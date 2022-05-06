@@ -168,10 +168,16 @@ console.log(typeof undefined);
 + Division Central: se refiere a los atributos de las clases indicando el nombre y el tipo de dato deparado por dos puntos ":"
 + Pie de Tabla: Describe los metodos a emplear y el tipo de dato que retorna
 ![Imagen de daigrama de clases](img/05%20diagrama%20de%20clases.png)
-40. ** ** :
-41. ** ** :
-42. ** ** :
-43. ** ** :
+40. **Retrocompatibilidad** : Es la capacidad de un sistema para ejecutar código que fue escrito para una versión más antigua del sistema.
+41. **Babel** : Babel, el transpilador que habla todos los lenguajes, sirve para hacer correr codigo de lenguajes con nuevas versiones en navegadores que aun no soportan estas, traduciendo de lo nuevo a lo viejo a codigo fuente
+42. **Transpilador** : Un transpilador es básicamente lo mismo que un compilador, con la diferencia que en vez de 
+producir lenguaje binario para su ejecución directa por un CPU, produce código fuente que hace lo 
+mismo, pero escrito en otro lenguaje (o en este caso, otra versión).
+43. **Azucar sintáctico** : En ES6 se agregó “class” como azúcar sintáctico, es decir, una forma más abreviada y sucinta 
+de definir funciones constructoras y sus prototipos.\
+Cuando se habla de azúcar sintáctico, nos referimos a que si bien ES6 implementa clases y 
+otros aspectos del paradigma orientado a objetos, es sólo a nivel de sintaxis, ya que como 
+sabemos JavaScript está orientado a prototipos.
 44. ** ** :
 45. ** ** :
 46. ** ** :
