@@ -191,6 +191,7 @@ Aparte de ser definida como una funcion puede ser definida como una variable que
     + Nos permite crear variables a las cuales solo puedo acceder a través de los metodos y no directamente a ella
     + Sirve como una fabrica de funciones ya que puedo utilizar una funcion y objetener diferentes resultados en base a los parametros que les pasamos 
     + las funciones anidadas pueden interactuar con los argumentos de la funcion y tambien si le agregamos un valor por defecto a los arguments
++ **Cuidado como las usas** : Si bien su uso puede optimizar nuestro codigo cuando veamos que seria bueno utilizar una closure tambien hay que tener cuidado como manejamos los datos o variables creadas porque por ejemplo si creamos una variable en el entorno lexico anterior a la funcion anidada dicha varible sera almacenada en memoria tantas veces como utilizemos dicha funcion y la almecenemos en otra variable por lo que es recomendable crear los parametros por defecto en el entorno lexico donde se creo la clausura y no en el mismo asi solo se es creada una vez dicha variable y luego referenciada desde adentro de la funcion aciendo uso solamente de lo necesesario y no creando copias en la memoria de dicha variable
 ~~~
 const miContador=(function(){
   let contador=0;
