@@ -182,7 +182,7 @@ sabemos JavaScript está orientado a prototipos.
 44. **IFE** : Las expresiones de función ejecutadas inmediatamente (Immediately-invoked
 function expressions o IIFE) son funciones que se ejecutan tan pronto como se
 definen.
-45. **Closures** : Es una funcion autoejecutable la cual devuelve varias variables o funciones las cuales puedes luego trabajar con ellas, engloba toda la funcion en parentesis y al final la hace autoejecutable a través de los parentesis "()", tambien se define como una variable que almacena una funcion la cual posee funciones anidadas y variables a niveles de scope superior las cuales se anclan a las funciones anidadas y asi podemos acceder a ellas, modificarlas o leerlas a través de las funciones anidadas que posee dicha funcion.\
+45. **Closures** : Es una funcion autoejecutable o no la cual devuelve varias variables o funciones las cuales puedes luego trabajar con ellas, engloba toda la funcion en parentesis y al final la hace autoejecutable a través de los parentesis "()", tambien se define como una funcion que la cual posee funciones anidadas y variables a niveles de scope superior las cuales se anclan a las funciones anidadas y asi podemos acceder a ellas, modificarlas o leerlas a través de las funciones anidadas que posee dicha funcion.\
 Aparte de ser definida como una funcion puede ser definida como una variable que almacena una funcion, al estudiar las closures hay que tener en cuenta los conceptos que forman parte de esta como:
 + Cada vez que creamos una funcion o hacemos referencia a una desde una variable distinta, se es creado un nuevo contexto de ejecucion con un nuevo entorno lexico
 + entorno lexico el cual esta definido mas abajo
