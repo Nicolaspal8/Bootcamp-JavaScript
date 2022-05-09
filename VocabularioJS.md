@@ -216,13 +216,16 @@ const miContador=(function(){
 ~~~
 46. **Polimorfismo** : En JavaScript el polimorfismo es la posibilidad de llamar a metodos en comun sin afectar a los otros objetos
 47. **Encapsulamiento** : Es el proceso de aislar nuestras variables presentes en las clases para que no puedan ser accedidas y modificadas directamente si no que para hacerlo tendermos que hacer a través de metodos que predefiniremos dentro de la clase, en java seria simplemente creado variables privadas junto con los getter y setter pero como en JavaScript no tenemos las palabras reservadas de private para las variables lo que hacemos es crear las variables dentro del constructor y tratarla como tal, no como propiedad haciendo referencia al this.variable si no que como let variable y crearemos los metodos para acceder o modificar esa variable dentro del constructor ya que el alcanze de esa variable es loca y debe ser accedida desde ahi y luego fuera del constructor crearemos otros getter y setter los cuales retornaran thi.get o this.set que fue como lo definimos dentro del constructor
-48. ** ** :
-49. ** ** :
-50. ** ** :
-51. ** ** :
-52. ** ** :
-53. ** ** :
-54. ** ** :
+48. **Sincrono** : Es cuando los procesos dentro del programa se ejecutan uno tras otro esperando que el anterior termine para que el siguiente pueda ser ejecutado
+49. **Asincrono** : Es cuando los procesos de ejecutan al mismo tiempo y no necesitan esperar a los otros para poder ser ejecutados
+50. **Concurrencia** : Es lo que se produce cuando dos o mas tareas progresan simultaneamente
+51. **Paralelismo** : Es cuando dos o mas tareas se ejecutan exactamente al mismo tiempo
+52. **Race condition** : Es un concepto que se interpreta como la ejecucion de varios procesos o eventos a la vez modificando datos  de forma concurrente sin tener la certeza sobre cuales seran los valores finales retornados por estos procesos lo cual puede producir incongruencias en nuestro codigo o errores inesperados
+53. **Callback** : Se le conoce como callback a la referencia a una funcion dentro de los parametros de otra o simplemente a dicha funcion ejecutada dentro de los parametros de otra funcion para utilizar lo que retorne la funcion pasada como callback en los parametros 
+54. **setTimeOut** : Es un metodo el cual nos permite ejecutar una funcion en un lapso de tiempo expresado en milisegundos, el primer parametro que recibe es la referencia a la funcion o la funcion misma pero cuidado porque si es una referencia no debe tener los parentesis ya que se ejecutara tan pronto como tu programa por eso solo debe ser una referencia a dicha funcion, tambien le podemos pasar mas parametros a la funcion a través de los prametros subsiguientes al tiempo de ejecución
+`setTimeout(function(){}, milliseconds, param1, param2, ...)`
+ + Su ejecución no bloquea el stack, por lo que es una función que se procesa de forma asíncrona.
+
 55. ** ** :
 56. ** ** :
 57. ** ** :
