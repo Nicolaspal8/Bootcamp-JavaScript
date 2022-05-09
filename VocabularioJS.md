@@ -194,24 +194,28 @@ Aparte de ser definida como una funcion puede ser definida como una variable que
 + **Cuidado como las usas** : Si bien su uso puede optimizar nuestro codigo cuando veamos que seria bueno utilizar una closure tambien hay que tener cuidado como manejamos los datos o variables creadas porque por ejemplo si creamos una variable en el entorno lexico anterior a la funcion anidada dicha varible sera almacenada en memoria tantas veces como utilizemos dicha funcion y la almecenemos en otra variable por lo que es recomendable crear los parametros por defecto en el entorno lexico donde se creo la clausura y no en el mismo asi solo se es creada una vez dicha variable y luego referenciada desde adentro de la funcion aciendo uso solamente de lo necesesario y no creando copias en la memoria de dicha variable
 ~~~
 const miContador=(function(){
-  let contador=0;
-  function incrementar (){
-    return _contador++;
-  }
-  function decrementar (){
-    return contador--;
-  function valor(){
-    return _contador;
-  }
-  return{
-    incrementar,
-    decrementar,
-    valor
+    let _contador=0;
+    function incrementar (){
+      return _contador++;
     }
-})();    
+    function decrementar (){
+      return _contador--;
+    }
+    function valor(){
+      return _contador;
+    }
+    return{
+      incrementar,
+      decrementar,
+      valor
+      }
+  })();  
+  console.log(miContador.incrementar())
+  console.log(miContador.incrementar())
+  console.log(miContador.incrementar())   
 ~~~
-46. **Polimorfismo** :
-47. ** ** :
+46. **Polimorfismo** : En JavaScript el polimorfismo es la posibilidad de llamar a metodos en comun sin afectar a los otros objetos
+47. **Encapsulamiento** : Es el proceso de aislar nuestras variables presentes en las clases para que no puedan ser accedidas y modificadas directamente si no que para hacerlo tendermos que hacer a través de metodos que predefiniremos dentro de la clase, en java seria simplemente creado variables privadas junto con los getter y setter pero como en JavaScript no tenemos las palabras reservadas de private para las variables lo que hacemos es crear las variables dentro del constructor y tratarla como tal, no como propiedad haciendo referencia al this.variable si no que como let variable y crearemos los metodos para acceder o modificar esa variable dentro del constructor ya que el alcanze de esa variable es loca y debe ser accedida desde ahi y luego fuera del constructor crearemos otros getter y setter los cuales retornaran thi.get o this.set que fue como lo definimos dentro del constructor
 48. ** ** :
 49. ** ** :
 50. ** ** :
