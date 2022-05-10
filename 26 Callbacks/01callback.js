@@ -23,30 +23,40 @@ debe retornar el 25% del número.
 
 // console.log(c(4));
 
-
-
 //Ejemplo 2
-function callB(value, callback){
-    console.log("Funcion CallB", value)
-    setTimeout(callback,4,value, value*value)
+function callB(value, callback) {
+  console.log("Funcion CallB", value);
+  setTimeout(callback, 4, value, value * value);
 }
 
-callB(4,(value, value2)=>{
-    console.log("CallBack")
-    console.log(value, value2)
-})
+callB(4, (value, value2) => {
+  console.log("CallBack");
+  console.log(value, value2);
+});
 
-console.log("----------------")
-//Ejemplo 3 
+console.log("----------------");
+//Ejemplo 3
 
-function callB2(value, callback){
-    console.log("Funcion CallB2", value)
-    setTimeout(callback,4,value, value*value)
+function callB2(value, callback) {
+  console.log("Funcion CallB2", value);
+  setTimeout(callback, 4, value, value * value);
 }
-function fDeclarada(value, value2){
-    console.log("CallBack2")
-    console.log(value, value2)
+function fDeclarada(value, value2) {
+  console.log("CallBack2");
+  console.log(value, value2);
 }
-callB2(4, fDeclarada)
+callB2(4, fDeclarada);
 
 //Para entender el funcionamiento es bueno ejecutarlo con node  o en el navegador y ver que el output se genera el console.log("---") pero aun no ejecuta lo enviado por parametro en el CallBack a la funcion entregada en primer lugar
+//Otro ejemplo con ES6
+const principal = (number) => {
+  const double = number * 2;
+  multiply(double, (square) => {
+    calculate25Percent(square, (percent) => {
+      console.log(percent);
+    });
+  });
+};
+const multiply = (number, callback) => callback(number * number);
+const calculate25Percent = (number, callback) => callback((number * 25) / 100);
+principal(5);

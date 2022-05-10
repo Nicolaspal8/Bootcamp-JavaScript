@@ -244,7 +244,8 @@ Hay tres secciones principales para el flujo de trabajo de ejecución de cualqui
 60. **Event Loop** : El bucle de eventos es un proceso que espera a que la pila de llamadas se elimine antes de enviar devoluciones de llamada de la cola de tareas a la pila de llamadas. Una vez que la pila está limpia, el ciclo de eventos se activa y verifica la cola de tareas para ver si hay devoluciones de llamada disponibles. Si hay alguno, lo empuja a la Pila de llamadas, espera a que la Pila de llamadas se borre nuevamente y repite el mismo proceso.\
 El diagrama muestra el flujo de trabajo básico entre Event Loop y Task Queue.\
 ![Diagrama de Event Loop y Task Queue](/img/08%20Event%20Loop.png)
-61. ** ** :
+61. **Memory Heap** : El Memory Heap concentra todas los objetos y datos dinámicos, como las variables y
+constantes que debe sostener en la memoria durante la ejecución de las aplicaciones.
 62. ** ** :
 63. ** ** :
 64. ** ** :
