@@ -218,7 +218,7 @@ const miContador=(function(){
 47. **Encapsulamiento** : Es el proceso de aislar nuestras variables presentes en las clases para que no puedan ser accedidas y modificadas directamente si no que para hacerlo tendermos que hacer a través de metodos que predefiniremos dentro de la clase, en java seria simplemente creado variables privadas junto con los getter y setter pero como en JavaScript no tenemos las palabras reservadas de private para las variables lo que hacemos es crear las variables dentro del constructor y tratarla como tal, no como propiedad haciendo referencia al this.variable si no que como let variable y crearemos los metodos para acceder o modificar esa variable dentro del constructor ya que el alcanze de esa variable es loca y debe ser accedida desde ahi y luego fuera del constructor crearemos otros getter y setter los cuales retornaran thi.get o this.set que fue como lo definimos dentro del constructor
 48. **Sincrono** : Es cuando los procesos dentro del programa se ejecutan uno tras otro esperando que el anterior termine para que el siguiente pueda ser ejecutado
 49. **Asincrono** : Es cuando los procesos de ejecutan al mismo tiempo y no necesitan esperar a los otros para poder ser ejecutados
-50. **Concurrencia** : Es lo que se produce cuando dos o mas tareas progresan simultaneamente
+50. **Concurrencia** :  La concurrencia es el conjunto de cosas que suceden juntas pero pueden haber empezado mas tarde o temprano y terminar antes o despues pero que se topan en algún punto si progresan simultáneamente
 51. **Paralelismo** : Es cuando dos o mas tareas se ejecutan exactamente al mismo tiempo
 52. **Race condition** : Es un concepto que se interpreta como la ejecucion de varios procesos o eventos a la vez modificando datos  de forma concurrente sin tener la certeza sobre cuales seran los valores finales retornados por estos procesos lo cual puede producir incongruencias en nuestro codigo o errores inesperados
 53. **Callback** :Es una funcion que se va a ejecutar luego de que otra lo haga o tambien Se le conoce como callback a la referencia a una funcion dentro de los parametros de otra o simplemente a dicha funcion ejecutada dentro de los parametros de otra funcion para utilizar lo que retorne la funcion pasada como callback en los parametros 
@@ -226,12 +226,24 @@ const miContador=(function(){
 `setTimeout(function(){}, milliseconds, param1, param2, ...)`
  + Su ejecución no bloquea el stack, por lo que es una función que se procesa de forma asíncrona.
 
-55. ** ** :
-56. ** ** :
-57. ** ** :
-58. ** ** :
-59. ** ** :
-60. ** ** :
+55. **Threads** : Es lo que define en cuanto al tiempo y espacio de ejecución como trabajara nuestro programa ya sea dependiendo del lenguaje de programación que estemos utilizando por ejemplo JavaScript es solo de un hilo pero hay otros que son multi hilo (Single Thread, Multi Thread) entonces sera capaz de ejecutar un proceso a la vez pero como se implementa entonces la asincronia? si son varios procesos pasando al mismo tiempo, mas abajo la explicación
+56. **CallStack** : LIFO (First in Last Out) Es la pila de llamadas que se genera al ir ejecutandose un programa en JavaScript la cual almacena las instrucciones o sentencias a ejecutar\
+![CallStack Imagen](/img/07%20CallStack.png)
+57. **Motor V8 de JavaScript** :
+El motor V8 es un motor en tiempo de ejecución de ensamblaje web de código abierto y alto rendimiento para JavaScript escrito en C ++ por Google. La mayoría de los navegadores ejecutan JavaScript usando el motor V8, e incluso el popular entorno de tiempo de ejecución de node js también lo usa.\
+En simples palabras, el V8 es un programa C ++, que recibe código JavaScript, lo compila y lo ejecuta.\
+El V8 hace dos cosas importantes;
+ - Asignación de memoria de pila
+ - Contexto de ejecución de la pila de llamadas
+Lamentablemente, nuestra sospecha estaba equivocada. El V8 tiene solo una pila de llamadas, piense en la pila de llamadas como el hilo.
+Un hilo === una pila de llamadas === una ejecución a la vez.
+58. **Api web** : Es lo que nos permite que JavaScript sea un lenguaje asincrono y no bloqueante es decir que puedan ejecutarse varios procesos a la vez, cuando el motor de JS V8 detecta codigo de la ApiWeb es decir codigo asincrono en su mayoría, se lo pasa a esta para no bloquear el callstack y poder seguir ejecutando sus procesos tranquilamente en un solo hilo, y la ApiWeb es la que se encarga del otro codigo el cual luego es devuelto a una call Queue o Cola de espera que luego devolvera nuestro bloque de instrucciones al CallStack en otras palabras.\
+Los navegadores proporcionan eventos, temporizadores y solicitudes Ajax en el lado del cliente y, a menudo, se denominan API web. ¡Son los que permiten que el JavaScript de un solo subproceso sea no bloqueante, concurrente y asincrónico! ¿Pero cómo?\
+Hay tres secciones principales para el flujo de trabajo de ejecución de cualquier programa JavaScript, la pila de llamadas(CallStack), la API web y la cola de tareas.
+59. **Cola de tareas** : Es donde llega el codigo devuelto por la API Web, Una cola es una estructura de datos que funciona según el principio Primero en entrar, primero en salir, de modo que a medida que las tareas se introducen en la cola, salen en el mismo orden. Las tareas que han sido ejecutadas por las API web, que se envían a la cola de tareas, luego regresan a la pila de llamadas para imprimir su resultado.
+60. **Event Loop** : El bucle de eventos es un proceso que espera a que la pila de llamadas se elimine antes de enviar devoluciones de llamada de la cola de tareas a la pila de llamadas. Una vez que la pila está limpia, el ciclo de eventos se activa y verifica la cola de tareas para ver si hay devoluciones de llamada disponibles. Si hay alguno, lo empuja a la Pila de llamadas, espera a que la Pila de llamadas se borre nuevamente y repite el mismo proceso.\
+El diagrama muestra el flujo de trabajo básico entre Event Loop y Task Queue.\
+![Diagrama de Event Loop y Task Queue](/img/08%20Event%20Loop.png)
 61. ** ** :
 62. ** ** :
 63. ** ** :
