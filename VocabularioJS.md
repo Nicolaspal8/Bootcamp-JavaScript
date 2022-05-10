@@ -123,9 +123,9 @@ Objetos, que permite la creación de un objeto sin definir explícitamente su cl
 derivando sus atributos al agregar propiedades y métodos a una instancia de otra
 clase o agregarlos a un objeto vacío.
 28. **Pureza** :  Propiedad de una función. Se considera que una función es pura cuando noproduce efectos secundarios y cuando produce los mismos resultados cada vez quese le pasan los mismos argumentos.
-29. **Patron de Diseño** :
-30. **Transpilación** :
-31. **Interprete** :
+29. **Patron de Diseño** : El patron de diseño es el que nos dice como esta construida una aplicacion o en base a que fundamentos se desarrollara esta, un ejemplo de un patron de diseño serie el ocupado en sitios web llamado MVC (Model View Controller) Modelo Vista Controlador
+30. **Transpilación** : Transpilacion quiere decir que un programa es adaptado a codigo funte de versiones anteriores del mismo programa para poder ser interpretado por los navegadores o aplicaciones que aun no soportan las nuevas versiones y escrituras o cambios en la sintaxis
+31. **Interprete** : Un interprete es el que genera la traduccion de nuestro programa para ser entendido directamente por el computador a diferencia de un compilador que genera un archivo ejecutable un interprete es como una traduccion en tiempo real y mas rapida que un compilador
 32. **Prototipo** : Su definicion como palabra quiere decir que representa a el ejemplar original o al primer molde en el que se fabrico alguna cosa u objeto, tambien significa que es el modelo mas representativo de algo degun la RAE
 33. **Prototype** : [Aqui un buen video el cual ayudará mejor a la comprension del  Prototype](https://www.youtube.com/watch?v=6gmYapa-KBY&ab_channel=JuanJoseOrtiz)El prototype en si de un objeto es heredado por defecto del Object Prototype, el cual es agregado al momento de crear dicho objeto por el motor de javascript, en si cada objeto tendra dentro de sus propiedades el objeto o protype que es lo mismo ya que es un objeto y una propiedad del objeto, tendra el constructor del objeto creado y la propiedad \__proto__ que es otro objeto que contiene a su vez un objeto mas\
 Puntos importantes a tener en cuenta:

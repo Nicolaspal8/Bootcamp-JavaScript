@@ -23,5 +23,15 @@ function c(n){
 
 console.log(c(4));
 
-const test = () => test();
-test();
+
+
+//Ejemplo 2
+function callB(value, callback){
+    console.log("Funcion CallB", value)
+    setTimeout(callback,4,value, value*value)
+}
+
+callB(4,(value, value2)=>{
+    console.log("CallBack")
+    console.log(value, value2)
+})
