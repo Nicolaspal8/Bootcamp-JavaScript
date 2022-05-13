@@ -1,3 +1,4 @@
+//Al utilizar destructuring con objetos el nombre tiene que ser igual al de la propiedad
 const promiseOriginal = (t) =>{
     return new Promise((result, reject) => {
         for(let i = 0; i< t; i++){
