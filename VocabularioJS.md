@@ -250,7 +250,17 @@ constantes que debe sostener en la memoria durante la ejecución de las aplicaci
     + **API XML RCP**:
     + **API JSON RCP**:
     + **API SOAP**: Simple Object Access Protocol Solo soporta tipo de datos en formato XML, y sirve para la comunicacion de dos procesos los cuales intercambian datos XML
-    + **API REST**
+    + **API REST**: Representational State Transfer Interfaz sobre sistemas a través del protocolo HTTP para obtener datos o generar operaciones respecto a dichos datos en todos los formatos posibles como XML y JSON junto con este tipo de API vienen otros conceptos como:
+        - Cliente/Servidor : Es un tipo de arquitectura o modelo por el cual dos o mas dispositivos se comunican entre si y transfieren y manipulan datos, principalmente tenemos un cliente el cual hara request o peticiones a un servidor a través de un tipo de protocolo, generalmente HTTP (Hyper Text Trasnfer Protocol) y luego el servidor respondera con un response o respuesta, junto con esto tenemos las 4 operacinoes principales presentes en la arquitectura de cliente/servidor:
+            + Get
+            + Post
+            + Put
+            + Delete
+        - Sin estado
+        - Cache
+        - Sistema de Capas
+        - Interfaz uniforme
+        - Codigo de baja demanda
 63. ** ** :
 64. ** ** :
 65. ** ** :
