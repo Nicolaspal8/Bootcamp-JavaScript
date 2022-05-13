@@ -240,13 +240,17 @@ Un hilo === una pila de llamadas === una ejecución a la vez.
 58. **Api web** : Es lo que nos permite que JavaScript sea un lenguaje asincrono y no bloqueante es decir que puedan ejecutarse varios procesos a la vez, cuando el motor de JS V8 detecta codigo de la ApiWeb es decir codigo asincrono en su mayoría, se lo pasa a esta para no bloquear el callstack y poder seguir ejecutando sus procesos tranquilamente en un solo hilo, y la ApiWeb es la que se encarga del otro codigo el cual luego es devuelto a una call Queue o Cola de espera que luego devolvera nuestro bloque de instrucciones al CallStack en otras palabras.\
 Los navegadores proporcionan eventos, temporizadores y solicitudes Ajax en el lado del cliente y, a menudo, se denominan API web. ¡Son los que permiten que el JavaScript de un solo subproceso sea no bloqueante, concurrente y asincrónico! ¿Pero cómo?\
 Hay tres secciones principales para el flujo de trabajo de ejecución de cualquier programa JavaScript, la pila de llamadas(CallStack), la API web y la cola de tareas.
-59. **Cola de tareas** : Es donde llega el codigo devuelto por la API Web, Una cola es una estructura de datos que funciona según el principio Primero en entrar, primero en salir, de modo que a medida que las tareas se introducen en la cola, salen en el mismo orden. Las tareas que han sido ejecutadas por las API web, que se envían a la cola de tareas, luego regresan a la pila de llamadas para imprimir su resultado.
+59. **Cola de tareas o Call Queue** : Es donde llega el codigo devuelto por la API Web, Una cola es una estructura de datos que funciona según el principio Primero en entrar, primero en salir, de modo que a medida que las tareas se introducen en la cola, salen en el mismo orden. Las tareas que han sido ejecutadas por las API web, que se envían a la cola de tareas, luego regresan a la pila de llamadas para imprimir su resultado.
 60. **Event Loop** : El bucle de eventos es un proceso que espera a que la pila de llamadas se elimine antes de enviar devoluciones de llamada de la cola de tareas a la pila de llamadas. Una vez que la pila está limpia, el ciclo de eventos se activa y verifica la cola de tareas para ver si hay devoluciones de llamada disponibles. Si hay alguno, lo empuja a la Pila de llamadas, espera a que la Pila de llamadas se borre nuevamente y repite el mismo proceso.\
 El diagrama muestra el flujo de trabajo básico entre Event Loop y Task Queue.\
 ![Diagrama de Event Loop y Task Queue](/img/08%20Event%20Loop.png)
 61. **Memory Heap** : El Memory Heap concentra todas los objetos y datos dinámicos, como las variables y
 constantes que debe sostener en la memoria durante la ejecución de las aplicaciones.
-62. ** ** :
+62. **API** : Aplication Programing Interface es la interfaz que nos permite mover datos entre serivdores lo cual gracias a esto podemos utilizar diversos recursos disponibles en la red para implementarlos en nuestras aplicaciones, a su vez hay 4 tipos de API:
+    + **API XML RCP**:
+    + **API JSON RCP**:
+    + **API SOAP**: Simple Object Access Protocol Solo soporta tipo de datos en formato XML, y sirve para la comunicacion de dos procesos los cuales intercambian datos XML
+    + **API REST**
 63. ** ** :
 64. ** ** :
 65. ** ** :
