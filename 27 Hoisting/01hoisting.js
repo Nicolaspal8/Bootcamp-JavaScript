@@ -1,3 +1,4 @@
+//Como podemos ver al ejecutar las funciones declaradas son elevadas por ende podemos llamarlas antes de declararlas 
 function prueba1(){
     console.log("prueba 1")
     let n = prueba3()
