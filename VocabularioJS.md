@@ -126,7 +126,7 @@ clase o agregarlos a un objeto vacío.
 29. **Patron de Diseño** : El patron de diseño es el que nos dice como esta construida una aplicacion o en base a que fundamentos se desarrollara esta, un ejemplo de un patron de diseño serie el ocupado en sitios web llamado MVC (Model View Controller) Modelo Vista Controlador
 30. **Transpilación** : Transpilacion quiere decir que un programa es adaptado a codigo funte de versiones anteriores del mismo programa para poder ser interpretado por los navegadores o aplicaciones que aun no soportan las nuevas versiones y escrituras o cambios en la sintaxis
 31. **Interprete** : Un interprete es el que genera la traduccion de nuestro programa para ser entendido directamente por el computador a diferencia de un compilador que genera un archivo ejecutable un interprete es como una traduccion en tiempo real y mas rapida que un compilador
-32. **Prototipo** : Su definicion como palabra quiere decir que representa a el ejemplar original o al primer molde en el que se fabrico alguna cosa u objeto, tambien significa que es el modelo mas representativo de algo degun la RAE
+32. **Prototipo** : Su definicion como palabra quiere decir que representa a el ejemplar original o al primer molde en el que se fabrico alguna cosa u objeto, tambien significa que es el modelo mas representativo de algo según la RAE
 33. **Prototype** : [Aqui un buen video el cual ayudará mejor a la comprension del  Prototype](https://www.youtube.com/watch?v=6gmYapa-KBY&ab_channel=JuanJoseOrtiz)El prototype en si de un objeto es heredado por defecto del Object Prototype, el cual es agregado al momento de crear dicho objeto por el motor de javascript, en si cada objeto tendra dentro de sus propiedades el objeto o protype que es lo mismo ya que es un objeto y una propiedad del objeto, tendra el constructor del objeto creado y la propiedad \__proto__ que es otro objeto que contiene a su vez un objeto mas\
 Puntos importantes a tener en cuenta:
 + Al crear un objeto y agregar ciertas propiedades las cuales pueden contener diferentes tipos de datos hasta una funcion se le sera agregada a todas las instancias creadas de dicho objeto por defecto, es decir que cada nuevo objeto que creemos a partir de una funcion constructora o de una clase esta extendera las caracteristicas presentes en el prototype a todas los objetos creados a partir de ella, y si en el trascurso de nuestro codigo modificamos o agregamos mas propiedades a el prototype de un objeto creado a partir de la clase base entonces automaticamente seran agregadas a todos los otros objetos que vengan de dicha clase o constructor
@@ -215,7 +215,7 @@ const miContador=(function(){
   console.log(miContador.incrementar())   
 ~~~
 46. **Polimorfismo** : En JavaScript el polimorfismo es la posibilidad de llamar a metodos en comun sin afectar a los otros objetos
-47. **Encapsulamiento** : Es el proceso de aislar nuestras variables presentes en las clases para que no puedan ser accedidas y modificadas directamente si no que para hacerlo tendermos que hacer a través de metodos que predefiniremos dentro de la clase, en java seria simplemente creado variables privadas junto con los getter y setter pero como en JavaScript no tenemos las palabras reservadas de private para las variables lo que hacemos es crear las variables dentro del constructor y tratarla como tal, no como propiedad haciendo referencia al this.variable si no que como let variable y crearemos los metodos para acceder o modificar esa variable dentro del constructor ya que el alcanze de esa variable es loca y debe ser accedida desde ahi y luego fuera del constructor crearemos otros getter y setter los cuales retornaran thi.get o this.set que fue como lo definimos dentro del constructor
+47. **Encapsulamiento** : Es el proceso de aislar nuestras variables presentes en las clases para que no puedan ser accedidas y modificadas directamente si no que para hacerlo tendermos que hacer a través de metodos que predefiniremos dentro de la clase, en java seria simplemente creando variables privadas junto con los getter y setter pero como en JavaScript no tenemos las palabras reservadas de private para las variables(Ahora si y se utiliza anteponiendo un # antes de la variable como #mivariable) lo que hacemos es crear las variables dentro del constructor y tratarla como tal, no como propiedad haciendo referencia al this.variable si no que como let variable y crearemos los metodos para acceder o modificar esa variable dentro del constructor ya que el alcanze de esa variable es local y debe ser accedida desde ahi y luego fuera del constructor crearemos otros getter y setter los cuales retornaran thi.get o this.set que fue como lo definimos dentro del constructor
 48. **Sincrono** : Es cuando los procesos dentro del programa se ejecutan uno tras otro esperando que el anterior termine para que el siguiente pueda ser ejecutado
 49. **Asincrono** : Es cuando los procesos de ejecutan al mismo tiempo y no necesitan esperar a los otros para poder ser ejecutados
 50. **Concurrencia** :  La concurrencia es el conjunto de cosas que suceden juntas pero pueden haber empezado mas tarde o temprano y terminar antes o despues pero que se topan en algún punto si progresan simultáneamente
@@ -252,10 +252,10 @@ constantes que debe sostener en la memoria durante la ejecución de las aplicaci
     + **API SOAP**: Simple Object Access Protocol Solo soporta tipo de datos en formato XML, y sirve para la comunicacion de dos procesos los cuales intercambian datos XML
     + **API REST**: Representational State Transfer Interfaz sobre sistemas a través del protocolo HTTP para obtener datos o generar operaciones respecto a dichos datos en todos los formatos posibles como XML y JSON junto con este tipo de API vienen otros conceptos como:
         - Cliente/Servidor : Es un tipo de arquitectura o modelo por el cual dos o mas dispositivos se comunican entre si y transfieren y manipulan datos, principalmente tenemos un cliente el cual hara request o peticiones a un servidor a través de un tipo de protocolo, generalmente HTTP (Hyper Text Trasnfer Protocol) y luego el servidor respondera con un response o respuesta, junto con esto tenemos las 4 operacinoes principales presentes en la arquitectura de cliente/servidor:
-            + Get
-            + Post
-            + Put
-            + Delete
+            + Get : Obtener
+            + Post : Crear
+            + Put : Editar
+            + Delete : Eliminar
         - Sin estado
         - Cache
         - Sistema de Capas
