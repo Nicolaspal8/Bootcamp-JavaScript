@@ -37,7 +37,7 @@ Y aplicada de manera inversa con \W en mayusculas obtendremos todos los que no e
 
 ## Como crear una Expresion Regular
 
-1. Hay 2 formas, a través de una notacion literal que seria algo asi `let expRegular = /ab+c/i` o a través del objeto y su constructor que seria algo asi `let regExpresion = new RegExp('ab+c','i')`
+1. Hay 2 formas, a través de una notacion literal que seria algo asi `let expRegular = /ab+c/i` o a través del objeto y su constructor que seria algo asi `let regExpresion = new RegExp('ab+c','i')` o tambien asi mezclando ambas `let re = new RegExp(/ab+c/, 'i')`
 - Es recomendado utilizar la notacion literal cuando sabemos que dicha expresion se mantendra constante por ejemplo la podemos usar en un bucle y la expresion regular no se volverá a compilar con cada iteracion
 - Es recomendable la otra forma a través del constructor cuando sepamos que el patron de la expresion regular va a cambiar o no conozcamos el patron ya que da como resultado la compilacion en tiempo de ejecucion de la expresion regular
 
