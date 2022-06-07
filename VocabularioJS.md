@@ -261,11 +261,17 @@ constantes que debe sostener en la memoria durante la ejecución de las aplicaci
         - Sistema de Capas
         - Interfaz uniforme
         - Codigo de baja demanda
-63. ** ** :
-64. ** ** :
-65. ** ** :
-66. ** ** :
-67. ** ** :
+63. **^** : Caret es el nombre del simbolo muchas veces son agregados al comienzo de las versiones de las dependencias al importar algun paquete con npm install y esto dira que se  utilizara la ultima version disponible a partir del rango inicial y el siguiente como 1.1 1.2 1.3 hasta 1.9 es decir que si pongo ^1.1 y esta disponible la 1.9 usara la 1.9 pero el problema de esto es que si ocurre que una version del proyecto es maliciosa afectara al nuestro ya que instalara la ultima y no tendremos control directo sobre esta ya que le decimos que instale la ultima disponible por eso si le quitamos el caret solo intalaremos la versiona especificada y tambien usaremos esa para direferentes proyectos que requieran esa dependencia 
+64. **npm info nombre_dependencia** : te dice informacion sobre un proyecto en especifico para usarlo como dependencia o como sea, sirve para ver por ejemplo en que version va dicho proyecto
+65. **Node js** : entorno de ejecucion para ejecutar js del lado del servidor
++ single Thread
++ utiliza el motor v8 de google al igual que js
++ crece hacia los lados y no tanto verticalmente
++ creado en 2009 
++ npm creado en 2010 como gestor de paquetes para ser utilizados por node
++ usa la libreria libuv : Le permite a node enviar el codigo asincrono a esta libreria y trabajarlo desde allí con el proceso similar del event loop de javascript en el navegador en este caso libuv sera como la api web que se encarga del codigo asincrono
+66. **Express** : infraestructura de aplicaciones
+67. **middleware** :
 68. ** ** :
 69. ** ** :
 70. ** ** :
