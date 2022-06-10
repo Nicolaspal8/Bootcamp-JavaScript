@@ -271,7 +271,14 @@ constantes que debe sostener en la memoria durante la ejecución de las aplicaci
 + npm creado en 2010 como gestor de paquetes para ser utilizados por node
 + usa la libreria libuv : Le permite a node enviar el codigo asincrono a esta libreria y trabajarlo desde allí con el proceso similar del event loop de javascript en el navegador en este caso libuv sera como la api web que se encarga del codigo asincrono
 66. **Express** : infraestructura de aplicaciones
-67. **middleware** :
+67. **middleware** : son un punto intermedio de validacion creado entre una solicitud a una ruta especifica, es un metodo el cual ustilizamos el objeto express que guardamos generalmente en una constante llamada app y utilizamos el metodo
+~~~ 
+app.use(Path, (req,res, next) => {
+    //Validaciones
+    next()
+})
+~~~
+    El metodo next es como decir si pasa la prueba puede seguir ya que generalmente en este punto validamos algo como alguna clave de autorización
 68. ** ** :
 69. ** ** :
 70. ** ** :

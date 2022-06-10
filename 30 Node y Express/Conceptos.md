@@ -11,4 +11,7 @@ solicitud HTTP específico (GET, POST, PUT, DELETE, etc.).
 4. Rutas Genericas = Puedes crear rutas con un asterisco en el metodo get como path app.get("/*", callback)
 +  Las rutas genéricas deben ser ubicadas luego de la definición de todas las rutas, ya que al final, si Express no encuentra un handler adecuado para la petición recibida, usará este nuevo código de forma genérica para gestionar todas las peticiones que no coincidan con sus rutas preestablecidas.
 5. Objeto Request = Este objeto contiene varios métodos y propiedades interesantes, pero los más utilizados son:
-
+6. Middlewares = Entendiendo que las rutas creadas en nuestro servidor contienen una función que se ejecuta en el 
+momento que son consultadas, por su parte, los middlewares son funciones que se activan antes que 
+nuestras rutas y nos sirven como filtro o estación previa, donde podemos definir diferentes validaciones. 
+Su sintaxis es muy parecida a la creación de una ruta, pero el método que ocupamos es diferente,
