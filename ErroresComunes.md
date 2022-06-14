@@ -1,0 +1,2 @@
+1. **EADDRINUSE: Address Already In Use** : Este error se produce al intentar enlazar un servidor a una dirección local (dirección IP más
+puerto) la cual ya se encuentra en uso por otra aplicación o servicio local. Este error es frecuente al intentar utilizar el módulo integrado http o frameworks como express. ![Referencia Error](img/Errores/01%20EADDRINUSE.png)
