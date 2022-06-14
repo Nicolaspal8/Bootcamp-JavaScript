@@ -68,3 +68,8 @@ app.get("/Tiempo", (req, res) => {
     const tiempo = {time: Date.now()}
     res.send(tiempo);
 });
+
+//request param con restricciones
+app.get('/things/:id([0-9]{5})', function(req, res){
+    res.send('id: ' + req.params.id);
+ });

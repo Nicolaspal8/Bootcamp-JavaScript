@@ -17,3 +17,16 @@ como argumento la dirección en formato string.
 ● res.sendStatus(): Recibe como argumento el código de estado que deseemos devolver como 
 respuesta de la solicitud.
 ~~~
+5. Metodos de la clase File System
+- writeFile\
+![metodo writeFile](/img/15%20writeFile.png)
+- readFile\
+![metodo readFile](/img/16%20ReadFile.png)
+- renameFile\
+![metodo renameFile](/img/17%20RenameFile.png)
+- unlink Elimina un archivo\
+![metodo unlink](/img/18%20Unlink.png)
+
+6. Actualizacion automatica del servidor al realizar algun cambio --> npm install nodemon -g 
+- ahora hay que correr el proyecto con nodemon "nodemon start"
+7. 

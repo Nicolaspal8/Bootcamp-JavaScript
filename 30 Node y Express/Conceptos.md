@@ -15,3 +15,4 @@ solicitud HTTP específico (GET, POST, PUT, DELETE, etc.).
 momento que son consultadas, por su parte, los middlewares son funciones que se activan antes que 
 nuestras rutas y nos sirven como filtro o estación previa, donde podemos definir diferentes validaciones. 
 Su sintaxis es muy parecida a la creación de una ruta, pero el método que ocupamos es diferente,
+7. **Notaciones Importantes** : Si al metodo res.send solo le pasas un archivo o un objeto, lo que hara sera descargarlo en vez de mostrarlo directamente en el navegador

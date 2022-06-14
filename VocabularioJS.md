@@ -279,7 +279,18 @@ app.use(Path, (req,res, next) => {
 })
 ~~~
     El metodo next es como decir si pasa la prueba puede seguir ya que generalmente en este punto validamos algo como alguna clave de autorización
-68. ** ** :
+68. **Dependencias y gestores** : Primero, es importante conocer qué es una dependencia. Una dependencia corresponde a
+un módulo externo de código, librería o paquete de código que presta o desarrolla una
+función específica. Las dependencias pueden estar empaquetadas dentro de un solo
+archivo o en un conjunto de archivos, carpetas o algún otro tipo de estructura. La librería
+jQuery (https://jquery.com/) es un conocido ejemplo de dependencia, ya que provee un
+conjunto de funcionalidades para gestionar el DOM de una página web con una sintaxis
+simplificada.
+Entonces, un gestor de dependencias es un software especializado que es capaz de
+coordinar la integración de dependencias en otros paquetes de software. Para lograr esto,
+los softwares operan bajo archivos de configuración que condicionan el cómo van a actuar,
+logrando almacenar scripts de ejecución, versiones específicas de dependencias,
+configurando ambientes de ejecución, entre otros.
 69. ** ** :
 70. ** ** :
 71. ** ** :
