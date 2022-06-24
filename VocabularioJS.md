@@ -291,7 +291,7 @@ coordinar la integración de dependencias en otros paquetes de software. Para lo
 los softwares operan bajo archivos de configuración que condicionan el cómo van a actuar,
 logrando almacenar scripts de ejecución, versiones específicas de dependencias,
 configurando ambientes de ejecución, entre otros.
-69. ** ** :
+69. **Protocolo SMTP** : Simple Mail Transfer Protocol 
 70. ** ** :
 71. ** ** :
 72. ** ** :
