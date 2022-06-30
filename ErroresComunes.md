@@ -41,3 +41,7 @@ La solución a este error consiste en revisar que las rutas a el o los archivos 
 6. **ETIMEDOUT: Operation Time Out** : Este error se produce al intentar acceder o realizar una petición a un destino, como un equipo o servidor en red, el cual no respondió dentro del tiempo de espera requerido. Este tipo de error se genera usualmente cuando se hace uso de módulos integrados como http, net o al hacer uso de alguna librería que trabaje con elementos de red como axios, express, entre otras.
 ![Ref err](img/Errores/04%20ETIMEDOUT.png)
 ¿Solución? El problema usualmente en este tipo de errores puede estar en el destino, ya que este no responde a tiempo o le falta la instrucción que cuelga la petición. Sin embargo, también puede deberse a que el proceso que se está ejecutando en el servidor es complejo y requiere de más tiempo del que está declarado como límite. Este último es una señal clara de que se necesita optimizar el código en el servidor para poder responder más rápidamente a los clientes.
+
+7. **400 Bad Request** : principalmente surge en errores se sintaxis al interactuar con un servidor y el problema se puede dar del lado del cliente como del lado de servidor, en este caso tambien hay errores que son fuera de lo comun y arrojan ese error por ejemplo:
++ intentar parsear un tipo de dato vacio a json como la propiedad inexistente de un tipo de dato json como JSON.parse(data.noexiste)
++ errores en la sintaxis utilizada en la query al realizar la peticion al servidor como caracteres no validos o algo que tenga que ver con la sintaxis

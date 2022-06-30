@@ -87,7 +87,7 @@ Fases antes de la ejecucion de un codigo
     - **Fase de creacion** : Son creadas 2 cosas unicas, y se asignan espacio en memoria para variables y funciones y asignacion de valores undefined para variables es decir son solo declaradas ya que aqui es donde sucede el Hositing o elevacion
         - **Objeto Global windows(Para JS del lado del cliente)**
         - **Una variable Global llamada this** 
-    - **Fase de ejecición** : Aquí comienza la ejecucion del codigo, se asigna el valor de las variables globales. Hay que tener en cuenta que aqui no se invoca ninguna funcion como en el contexto de ejecucion de funciones
+    - **Fase de ejecución** : Aquí comienza la ejecucion del codigo, se asigna el valor de las variables globales. Hay que tener en cuenta que aqui no se invoca ninguna funcion como en el contexto de ejecucion de funciones
 + **Function Execution Context (FEC)** : Este contexo es creado al invocar a una funcion\
 Ejemplo:
 ~~~
