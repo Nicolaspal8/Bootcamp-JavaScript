@@ -28,4 +28,8 @@ de esta lectura, más de 13 millones de descargas semanales en su repositorio de
 7. **lodash** 
 + Facilita el uso de arreglos, objetos, numeros y cadenas de texto
 
+8. **dotenv** 
++ Es Para para trabajar con variables de entorno y asi no mostrar directamente la informacion que no queramos que se comparta como claves de acceso o datos de coneccion a la base de datos
+
+
 
