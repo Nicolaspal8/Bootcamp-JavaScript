@@ -70,3 +70,6 @@ agregarán funcionalidades nuevas, es decir, se cambiará a la versión menor m�
 reciente disponible.
 + *3.5.1: El carácter asterisco nos asegurará que se actualizará a la versión mayor más reciente disponible. Aplicar este tipo de configuración suele ser de alto impacto, por lo que se requiere cuidado al proceder.
 
+12. **--save** 
++ a partir de la version 5.0.0 de npm esta opcion de utiliza por defecto
++ antes era utilizado para guardar las dependencias en un archivo package.json ya que antes había que instalarlas primero y luego guardarlas entonces ese comando ahorraba ese paso de guardado
