@@ -1,0 +1,15 @@
+Cosas necesarias para trabajar en proyectos con Azure y c#
+https://docs.microsoft.com/en-us/azure/azure-functions/create-first-function-vs-code-csharp?tabs=in-process
+1. Extension de C# para visual studio
+2. Nodejs
+3. Extension de Azure function (Es recomendado en paquete de herramientas de azure que trae la mayoria de cosas de una vez)
+4. Azure function core tools con el comando npm
+npm install -g azure-functions-core-tools@3 --unsafe-perm true
+
+#1 Crear funcion de azure con c# y visual studio code
+https://docs.microsoft.com/en-us/azure/azure-functions/create-first-function-vs-code-csharp?tabs=in-process
+#2 Conectarse al recurso de cosmosDB de Azure 
+
+#3 Instrucciones de la paleta de comando y creaciacion avanzada de una funcion en azure
+https://docs.microsoft.com/en-us/azure/azure-functions/functions-develop-vs-code?tabs=csharp#generated-project-files
+
