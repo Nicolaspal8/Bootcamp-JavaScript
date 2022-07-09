@@ -31,5 +31,9 @@ de esta lectura, más de 13 millones de descargas semanales en su repositorio de
 8. **dotenv** 
 + Es Para para trabajar con variables de entorno y asi no mostrar directamente la informacion que no queramos que se comparta como claves de acceso o datos de coneccion a la base de datos
 
+9. **Node Security Project (nsp)**
++ de Adam Baldwin
+Interesante para los programadores de aplicaciones web con Node.js. Esta extensión añade un nuevo comando, nsp, que lanza una verificación de tu código contra el inventario de vulnerabilidades de seguridad de Node Security Project.
 
+Súper-útil para tener la seguridad de nuestro proyecto bajo control.
 

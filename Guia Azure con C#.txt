@@ -14,11 +14,5 @@ https://docs.microsoft.com/en-us/azure/azure-functions/create-first-function-vs-
 https://docs.microsoft.com/en-us/azure/azure-functions/functions-develop-vs-code?tabs=csharp#generated-project-files
 
 
+1. JsonConvert.DesrializeObject<dynamic>(json);
 
-1. https://docs.microsoft.com/es-es/azure/azure-sql/database/connect-query-dotnet-visual-studio?view=azuresql
-2. https://docs.microsoft.com/en-us/azure/azure-functions/functions-reference?tabs=blob
-3. https://docs.microsoft.com/en-us/azure/azure-functions/functions-bindings-http-webhook?tabs=in-process%2Cfunctionsv2&pivots=programming-language-csharp
-4. https://docs.microsoft.com/en-us/azure/azure-functions/functions-develop-vs-code?tabs=csharp#generated-project-files
-5. https://docs.microsoft.com/en-us/azure/azure-functions/functions-add-output-binding-storage-queue-vs-code?tabs=in-process&pivots=programming-language-csharp
-6. https://docs.microsoft.com/en-us/azure/azure-functions/functions-add-output-binding-cosmos-db-vs-code?tabs=in-process&pivots=programming-language-csharp
- 

@@ -10,7 +10,6 @@ const config = {
     port: process.env.DB_PORT,
 }
 const pool = new Pool(config)
-// prompt.start()
 
 const registrar = async ({Nombre, RutActual, Curso}) =>{
   console.log("----------DATOS--------------", Nombre, RutActual, Curso)

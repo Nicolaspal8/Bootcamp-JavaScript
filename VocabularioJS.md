@@ -293,7 +293,8 @@ logrando almacenar scripts de ejecución, versiones específicas de dependencias
 configurando ambientes de ejecución, entre otros.
 69. **Protocolo SMTP** : Simple Mail Transfer Protocol 
 70. **Semantic version** : son las versiones de las dependencias de los proyectos las cuales estan representadas por 3 numeros 1.1.1 el ultimo indica los parches o cosas no tan grandemente significativas, el penultimo indica ya cambios un poco mas significativos como agregar nuevas cosas o utilidades y el primero ya indica un cambio que si que afecta a la forma como utilizamos la libreria o paquete 
-71. ** ** :
+71. **crashed** :  El problema es que el error no está siendo 
+impreso por consola de forma controlada, sino que nuestra aplicación se estrelló con el error (conocido en inglés como crashed) y
 72. ** ** :
 73. ** ** :
 74. ** ** :
