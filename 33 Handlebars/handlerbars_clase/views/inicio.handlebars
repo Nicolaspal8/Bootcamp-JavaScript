@@ -1,0 +1,35 @@
+{{> menu numero=numero}}
+
+{{#if nombre}}
+<h1>Nombre existe</h1>
+{{else}}
+<h1>nombre no existe</h1>
+{{/if}}
+
+{{#unless isLogged}}
+<p>El usuario no está registrado</p>
+{{/unless}}
+
+{{#each lenguajesFrontend }}
+    <ul>
+        <li>
+            {{this.name}}
+        </li>
+    </ul>
+{{/each}}
+
+<div class="container">
+    <div class="row">
+        {{#if isProducto}}
+            {{#each productos}}
+            {{> card
+                nombre=this.nombre
+                imagen=this.imagen
+                descripcion=this.descripcion
+            }}
+            {{/each}}
+        {{else}}
+            <h2>No hay productos encontraoos</h2>
+        {{/if}}
+    </div>
+</div>

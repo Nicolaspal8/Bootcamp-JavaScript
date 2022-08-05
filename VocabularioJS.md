@@ -295,8 +295,15 @@ configurando ambientes de ejecución, entre otros.
 70. **Semantic version** : son las versiones de las dependencias de los proyectos las cuales estan representadas por 3 numeros 1.1.1 el ultimo indica los parches o cosas no tan grandemente significativas, el penultimo indica ya cambios un poco mas significativos como agregar nuevas cosas o utilidades y el primero ya indica un cambio que si que afecta a la forma como utilizamos la libreria o paquete 
 71. **crashed** :  El problema es que el error no está siendo 
 impreso por consola de forma controlada, sino que nuestra aplicación se estrelló con el error (conocido en inglés como crashed) y
-72. ** ** :
-73. ** ** :
+72. **LocalStorage** : 
++ principalmente se trabaja desde el frontEnd al igual que el sessionStorage
++ Sirve para almacenar datos temporalmente cuando el usuario esta en nuestra pagina los cuales persisten a través de datos clave valor y son guardados como Strings
++ Para acceder a ellos o agregar debemos hacerlo con el metodo de localStorage.getItem o setItem
++ Si queremos guardar datos de otro tipo que no sean strings debemos usar el metodo de Json.stringify y luego para leerlos el metodo de Json.parse
++ Posee un metodo clear() para limpiar los datos
+73. **SessionStorage** :
++ Sirve para almacenar datos en la sesion del cliente que son eliminados cuando se elimina la pestaña abierta o cuando expiran los datos dependiendo de como lo configuremos supongo que tambien se puede hacer un temporizador para que los datos expiren por inactividad u otro motivo
++ Posee un metodo clear() para limpiar los datos
 74. ** ** :
 75. ** ** :
 76. ** ** :
